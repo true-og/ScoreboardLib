@@ -9,24 +9,34 @@ public class Entry {
     private int position;
 
     public Entry(String name, int position) {
+
         this.name = LegacyComponentSerializer.legacySection().deserialize(name);
         this.position = position;
+
     }
 
     public TextComponent getName() {
+
         return name;
+
     }
 
     public void setName(TextComponent name) {
+
         this.name = name;
+
     }
 
     public int getPosition() {
+
         return position;
+
     }
 
     public void setPosition(int position) {
+
         this.position = position;
+
     }
 
 }

@@ -11,21 +11,30 @@ public final class ScoreboardLib extends JavaPlugin {
     private static Plugin instance;
 
     public static Plugin getPluginInstance() {
+
         return instance;
+
     }
 
     public static void setPluginInstance(Plugin instance) {
-        if (ScoreboardLib.instance != null) return;
+
+        if (ScoreboardLib.instance != null)
+            return;
         ScoreboardLib.instance = instance;
+
     }
 
     public static Scoreboard createScoreboard(Player holder) {
+
         return new SimpleScoreboard(holder);
+
     }
 
     @Override
     public void onEnable() {
+
         setPluginInstance(this);
+
     }
 
 }

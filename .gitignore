@@ -1,4 +1,8 @@
+.gradle/
 .idea/
-output/
-target/
+.project
+.classpath
+.settings/
+build/
+bin/
 ScoreboardLib.iml

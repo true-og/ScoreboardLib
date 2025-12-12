@@ -6,7 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * An utility to make pretty entries for the scoreboards, without calculating the positions by yourself.
+ * An utility to make pretty entries for the scoreboards, without calculating
+ * the positions by yourself.
  *
  * @author TigerHix
  */
@@ -20,7 +21,9 @@ public final class EntryBuilder {
      * @return this
      */
     public EntryBuilder blank() {
+
         return next("");
+
     }
 
     /**
@@ -30,8 +33,10 @@ public final class EntryBuilder {
      * @return this
      */
     public EntryBuilder next(String string) {
+
         entries.add(new Entry(adapt(string), entries.size()));
         return this;
+
     }
 
     /**
@@ -40,16 +45,24 @@ public final class EntryBuilder {
      * @return map
      */
     public List<Entry> build() {
+
         for (Entry entry : entries) {
+
             entry.setPosition(entries.size() - entry.getPosition());
+
         }
+
         return entries;
+
     }
 
     private String adapt(String entry) {
+
         // Cut off the exceeded part if needed
-        if (entry.length() > 48) entry = entry.substring(0, 47);
+        if (entry.length() > 48)
+            entry = entry.substring(0, 47);
         return Strings.format(entry);
+
     }
 
 }

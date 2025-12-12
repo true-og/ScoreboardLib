@@ -3,7 +3,8 @@ package me.tigerhix.lib.scoreboard.type;
 import org.bukkit.entity.Player;
 
 /**
- * Represents an advanced scoreboard that can display up to 48 characters in a single entry.
+ * Represents an advanced scoreboard that can display up to 48 characters in a
+ * single entry.
  *
  * @author TigerHix
  */

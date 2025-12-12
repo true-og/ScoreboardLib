@@ -12,7 +12,8 @@ import java.util.List;
 public interface ScoreboardHandler {
 
     /**
-     * Determines the title to display for this player. If null returned, title automatically becomes a blank line.
+     * Determines the title to display for this player. If null returned, title
+     * automatically becomes a blank line.
      *
      * @param player player
      * @return title
@@ -20,7 +21,8 @@ public interface ScoreboardHandler {
     String getTitle(Player player);
 
     /**
-     * Determines the entries to display for this player. If null returned, the entries are not updated.
+     * Determines the entries to display for this player. If null returned, the
+     * entries are not updated.
      *
      * @param player player
      * @return entries
